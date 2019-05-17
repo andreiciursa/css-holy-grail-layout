@@ -4,11 +4,9 @@ import { App } from './components'
 
 export default () => {
   return (
-    <div className="App">
-      <App>
-        <App.Nav />
-        <App.Main />
-      </App>
-    </div>
+    <App>
+      <App.Main />
+      <App.Nav />
+    </App>
   )
 }

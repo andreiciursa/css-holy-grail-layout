@@ -13,11 +13,15 @@ import Nav from './nav'
 console.log(typeof React)
 
 const styles = {
-  border: '5px solid black',
+  border: '4px solid yellow',
 
   display: 'flex',
   flexWrap: 'nowrap',
-  height: '100vh',
+
+  position: 'fixed',
+  width: '100%',
+  height: '100%',
+  overflow: 'hidden',
 }
 
 const App = ({ children }) => {
