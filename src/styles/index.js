@@ -6,7 +6,7 @@ export const GLOBAL_STYLES = {
     fontFamily: FONTS.join(', '),
     boxSizing: 'border-box',
     fontSize: 15,
-    // overflow: 'hidden',
+    overflow: 'hidden',
   },
 
   '*, *:before, *:after': {
