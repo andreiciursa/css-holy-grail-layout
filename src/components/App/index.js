@@ -1,0 +1,35 @@
+/** @jsx jsx */
+import { jsx } from '@emotion/core'
+
+import React from 'react'
+import { Global } from '@emotion/core'
+import 'normalize.css'
+
+import { GLOBAL_STYLES } from '../../styles'
+
+import Main from './main'
+import Nav from './nav'
+
+console.log(typeof React)
+
+const styles = {
+  border: '5px solid black',
+
+  display: 'flex',
+  flexWrap: 'nowrap',
+  height: '100vh',
+}
+
+const App = ({ children }) => {
+  return (
+    <>
+      <Global styles={GLOBAL_STYLES} />
+      <div css={styles}>{children}</div>
+    </>
+  )
+}
+
+App.Main = Main
+App.Nav = Nav
+
+export default App
